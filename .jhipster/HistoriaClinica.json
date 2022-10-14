@@ -1,0 +1,47 @@
+{
+  "applications": "*",
+  "changelogDate": "20220926032600",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "historia_clinica",
+  "fields": [
+    {
+      "fieldName": "sugerencia",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "maxlength"],
+      "fieldValidateRulesMaxlength": "2000"
+    },
+    {
+      "fieldName": "diagnostico",
+      "fieldType": "String",
+      "fieldValidateRules": ["maxlength"],
+      "fieldValidateRulesMaxlength": "2000"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "HistoriaClinica",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "paciente",
+      "otherEntityRelationshipName": "historias",
+      "relationshipName": "paciente",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "historiaClinica",
+      "relationshipName": "familiar",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "historiaClinica",
+      "relationshipName": "medico",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

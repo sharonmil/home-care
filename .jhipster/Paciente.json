@@ -1,0 +1,80 @@
+{
+  "applications": "*",
+  "changelogDate": "20220925211858",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "paciente",
+  "fields": [
+    {
+      "fieldName": "cedula",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "20",
+      "fieldValidateRulesMinlength": "5"
+    },
+    {
+      "fieldName": "ciudad",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "20",
+      "fieldValidateRulesMinlength": "5"
+    },
+    {
+      "fieldName": "direccion",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength"],
+      "fieldValidateRulesMinlength": "5"
+    },
+    {
+      "fieldName": "telefono",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength"],
+      "fieldValidateRulesMinlength": "7"
+    },
+    {
+      "fieldName": "fechaNacimiento",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Paciente",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "paciente",
+      "ownerSide": true,
+      "relationshipName": "username",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "familiar",
+      "otherEntityRelationshipName": "paciente",
+      "ownerSide": true,
+      "relationshipName": "familiar",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "medico",
+      "otherEntityRelationshipName": "pacientes",
+      "relationshipName": "medico",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "historiaClinica",
+      "otherEntityRelationshipName": "paciente",
+      "relationshipName": "historias",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "signosVitales",
+      "otherEntityRelationshipName": "paciente",
+      "relationshipName": "historiaSignos",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

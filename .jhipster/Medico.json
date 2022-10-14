@@ -1,0 +1,67 @@
+{
+  "applications": "*",
+  "changelogDate": "20220925030529",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "medico",
+  "fields": [
+    {
+      "fieldName": "cedula",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "20",
+      "fieldValidateRulesMinlength": "5"
+    },
+    {
+      "fieldName": "ciudad",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "20",
+      "fieldValidateRulesMinlength": "5"
+    },
+    {
+      "fieldName": "direccion",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength"],
+      "fieldValidateRulesMinlength": "5"
+    },
+    {
+      "fieldName": "telefono",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength"],
+      "fieldValidateRulesMinlength": "7"
+    },
+    {
+      "fieldName": "fechaNacimiento",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "especialidad",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength"],
+      "fieldValidateRulesMinlength": "2"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Medico",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "medico",
+      "ownerSide": true,
+      "relationshipName": "username",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "paciente",
+      "otherEntityRelationshipName": "medico",
+      "relationshipName": "pacientes",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "serviceClass"
+}

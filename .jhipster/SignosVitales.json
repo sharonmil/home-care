@@ -1,0 +1,73 @@
+{
+  "applications": "*",
+  "changelogDate": "20220925030530",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "signos_vitales",
+  "fields": [
+    {
+      "fieldName": "oximetria",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["min", "max"],
+      "fieldValidateRulesMax": "100",
+      "fieldValidateRulesMin": "1"
+    },
+    {
+      "fieldName": "frecuenciaRespiratoria",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["min", "max"],
+      "fieldValidateRulesMax": "300",
+      "fieldValidateRulesMin": "1"
+    },
+    {
+      "fieldName": "frecuenciaCardiaca",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["min", "max"],
+      "fieldValidateRulesMax": "300",
+      "fieldValidateRulesMin": "5"
+    },
+    {
+      "fieldName": "presion",
+      "fieldType": "String",
+      "fieldValidateRules": ["minlength"],
+      "fieldValidateRulesMinlength": "2"
+    },
+    {
+      "fieldName": "glicemia",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["min", "max"],
+      "fieldValidateRulesMax": "600",
+      "fieldValidateRulesMin": "1"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "SignosVitales",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "paciente",
+      "otherEntityRelationshipName": "historiaSignos",
+      "relationshipName": "paciente",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "signosVitales",
+      "relationshipName": "familiar",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "signosVitales",
+      "relationshipName": "medico",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}

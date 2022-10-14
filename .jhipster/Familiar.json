@@ -1,0 +1,68 @@
+{
+  "applications": "*",
+  "changelogDate": "20220925211859",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "familiar",
+  "fields": [
+    {
+      "fieldName": "cedula",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "20",
+      "fieldValidateRulesMinlength": "5"
+    },
+    {
+      "fieldName": "ciudad",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength", "maxlength"],
+      "fieldValidateRulesMaxlength": "20",
+      "fieldValidateRulesMinlength": "5"
+    },
+    {
+      "fieldName": "direccion",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength"],
+      "fieldValidateRulesMinlength": "5"
+    },
+    {
+      "fieldName": "telefono",
+      "fieldType": "String",
+      "fieldValidateRules": ["required", "minlength"],
+      "fieldValidateRulesMinlength": "7"
+    },
+    {
+      "fieldName": "fechaNacimiento",
+      "fieldType": "LocalDate",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "parentesco",
+      "fieldType": "Parentesco",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "PADRE_O_MADRE,PAREJA,HIJO,OTRO"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Familiar",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "user",
+      "otherEntityRelationshipName": "familiar",
+      "ownerSide": true,
+      "relationshipName": "username",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "paciente",
+      "otherEntityRelationshipName": "familiar",
+      "ownerSide": false,
+      "relationshipName": "paciente",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "service": "serviceClass"
+}
