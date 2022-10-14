@@ -1,0 +1,13 @@
+id;login;password_hash;first_name;last_name;email;image_url;activated;lang_key;created_by;last_modified_by
+1;admin;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;Administrator;Administrator;admin@localhost.com;;true;es;system;system
+2;user;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;User;User;user@localhost.com;;true;es;system;system
+3;medico;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Medico;Uno;medico@localhost.com;;true;es;system;system
+4;paciente1;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Paciente1;Uno;paciente1@localhost.com;;true;es;system;system
+5;paciente2;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Paciente2;Dos;paciente2@localhost.com;;true;es;system;system
+6;paciente3;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Paciente3;Tres;paciente3@localhost.com;;true;es;system;system
+7;familiar1;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Familiar1;Uno;familiar1@localhost.com;;true;es;system;system
+8;familiar2;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Familiar2;Dos;familiar2@localhost.com;;true;es;system;system
+9;familiar3;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Familiar3;Tres;familiar3@localhost.com;;true;es;system;system
+10;auxiliar;$2a$10$gSAhZrxMllrbgj/kkK9UceBPpChGWJA7SYIb1Mqo.n5aNLq1/oRrC;AuxiliarName;AuxiliarApellido;auxiliar@localhost.com;;true;es;system;system
+11;enfermero;$2a$10$VEjxo0jq2YG9Rbk2HmX9S.k1uZBGYUHdUcid3g/vfiEl7lwWgOH/K;Enfermero;Apellido;enfermero@localhost.com;;true;es;system;system
+

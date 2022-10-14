@@ -1,0 +1,31 @@
+{
+  "homecareApp": {
+    "medico": {
+      "home": {
+        "title": "Profesionales en Salud",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Profesional de Salud",
+        "createOrEditLabel": "Crear o editar Profesional de Salud ",
+        "notFound": "Ningún Profesional en Salud encontrado"
+      },
+      "created": "Un nuevo Profesional en Salud ha sido creado con el identificador {{ param }}",
+      "updated": "Un Profesional en Salud ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Profesional en Salud ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar al profesional de Salud {{ id }}?"
+      },
+      "detail": {
+        "title": "Profesional en Salud"
+      },
+      "id": "ID",
+      "cedula": "Cedula",
+      "ciudad": "Ciudad",
+      "direccion": "Direccion",
+      "telefono": "Telefono",
+      "fechaNacimiento": "Fecha Nacimiento",
+      "especialidad": "Especialidad",
+      "username": "Username",
+      "pacientes": "Pacientes"
+    }
+  }
+}

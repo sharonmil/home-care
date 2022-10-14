@@ -1,0 +1,31 @@
+{
+  "homecareApp": {
+    "familiar": {
+      "home": {
+        "title": "Familiars",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Familiar",
+        "createOrEditLabel": "Create or edit a Familiar",
+        "notFound": "No Familiars found"
+      },
+      "created": "A new Familiar is created with identifier {{ param }}",
+      "updated": "A Familiar is updated with identifier {{ param }}",
+      "deleted": "A Familiar is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Familiar {{ id }}?"
+      },
+      "detail": {
+        "title": "Familiar"
+      },
+      "id": "ID",
+      "cedula": "Cedula",
+      "ciudad": "Ciudad",
+      "direccion": "Direccion",
+      "telefono": "Telefono",
+      "fechaNacimiento": "Fecha Nacimiento",
+      "parentesco": "Parentesco",
+      "username": "Username",
+      "paciente": "Paciente"
+    }
+  }
+}

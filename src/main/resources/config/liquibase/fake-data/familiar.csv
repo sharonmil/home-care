@@ -1,0 +1,5 @@
+id;cedula;ciudad;direccion;telefono;fecha_nacimiento;parentesco;username_id
+1;1234567;Medellin;Laureles 34-34;3123456234;1972-09-21;PADRE_O_MADRE;7
+2;1234568;Medellin;Envigado 34-34;3169834275;1972-09-21;PADRE_O_MADRE;8
+3;1234569;Medellin;Itagui 34-34;30023452736;1972-09-21;PADRE_O_MADRE;9
+

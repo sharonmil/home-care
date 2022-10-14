@@ -1,0 +1,32 @@
+{
+  "homecareApp": {
+    "signosVitales": {
+      "home": {
+        "title": "Signos Vitales",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Signos Vitales",
+        "createOrEditLabel": "Crear o editar Signos Vitales",
+        "notFound": "Ningún Signos Vitales encontrado"
+      },
+      "created": "Un nuevo Signos Vitales ha sido creado con el identificador {{ param }}",
+      "updated": "Un Signos Vitales ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Signos Vitales ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Signos Vitales {{ id }}?"
+      },
+      "detail": {
+        "title": "Signos Vitales"
+      },
+      "id": "ID",
+      "oximetria": "Oximetria",
+      "frecuenciaRespiratoria": "Frecuencia Respiratoria",
+      "frecuenciaCardiaca": "Frecuencia Cardiaca",
+      "presion": "Presion",
+      "glicemia": "Glicemia",
+      "createdDate": "Created Date",
+      "paciente": "Paciente",
+      "familiar": "Familiar",
+      "medico": "Profesional en Salud"
+    }
+  }
+}

@@ -1,0 +1,83 @@
+
+entity Paciente {
+	cedula String required minlength(5) maxlength(20),
+    ciudad String required minlength(5) maxlength(20),
+    direccion String required minlength(5),
+    telefono String required minlength(7),
+    fechaNacimiento LocalDate required
+}
+
+entity Familiar {
+	cedula String required minlength(5) maxlength(20),
+    ciudad String required minlength(5) maxlength(20),
+    direccion String required minlength(5),
+    telefono String required minlength(7),
+    fechaNacimiento LocalDate required,
+    parentesco Parentesco required
+}
+
+enum Parentesco {
+    PADRE_O_MADRE, PAREJA, HIJO, OTRO
+}
+
+entity Medico {
+	cedula String required minlength(5) maxlength(20),
+    ciudad String required minlength(5) maxlength(20),
+    direccion String required minlength(5),
+    telefono String required minlength(7),
+    fechaNacimiento LocalDate required
+    especialidad String minlength(2)
+}
+
+enum Parentesco {
+    PADRE_O_MADRE, PAREJA, HIJO, OTRO
+}
+
+
+entity SignosVitales {
+	oximetria Integer min(1) max(100),
+    frecuenciaRespiratoria Integer min(1) max(300),
+    frecuenciaCardiaca Integer min(5) max(300),
+    presion String minlength(2),
+    glicemia Integer min(1) max(600),
+    createdDate LocalDate
+}
+
+entity HistoriaClinica {
+	sugerencia String required maxlength(2000),
+    diagnostico String maxlength(2000)
+}
+
+
+relationship ManyToOne {
+  HistoriaClinica{paciente} to Paciente{historias},
+  HistoriaClinica{familiar} to User,
+  HistoriaClinica{medico} to User,
+}
+
+relationship ManyToOne {
+  SignosVitales{paciente} to Paciente{historiaSignos},
+  SignosVitales{familiar} to User,
+  SignosVitales{medico} to User,
+}
+
+relationship OneToOne {
+	Paciente{username} to User,
+    Paciente{familiar} to Familiar{paciente}
+}
+
+relationship ManyToOne {
+	Paciente{medico} to Medico{pacientes}
+}
+
+relationship OneToOne {
+	Familiar{username} to User
+}
+
+relationship OneToOne {
+	Medico{username} to User
+}
+
+
+service all with serviceClass
+

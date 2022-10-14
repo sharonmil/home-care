@@ -1,0 +1,4 @@
+id;cedula;ciudad;direccion;telefono;fecha_nacimiento;username_id;familiar_id
+1;1053245346;Medellin;Laureles 45-67;3212345387;1992-09-21;4;1
+2;1053245347;Medellin;Envigado 45-67;3216723456;1992-09-21;5;2
+3;1053245348;Medellin;Itagui 45-67;3402834675;1992-09-21;6;3

@@ -1,0 +1,28 @@
+{
+  "homecareApp": {
+    "historiaClinica": {
+      "home": {
+        "title": "Historia Clinicas",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Historia Clinica",
+        "createOrEditLabel": "Create or edit a Historia Clinica",
+        "notFound": "No Historia Clinicas found"
+      },
+      "created": "A new Historia Clinica is created with identifier {{ param }}",
+      "updated": "A Historia Clinica is updated with identifier {{ param }}",
+      "deleted": "A Historia Clinica is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Historia Clinica {{ id }}?"
+      },
+      "detail": {
+        "title": "Historia Clinica"
+      },
+      "id": "ID",
+      "sugerencia": "Sugerencia",
+      "diagnostico": "Diagnostico",
+      "paciente": "Paciente",
+      "familiar": "Familiar",
+      "medico": "Profesional de Salud"
+    }
+  }
+}
